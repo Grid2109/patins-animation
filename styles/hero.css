@@ -1,0 +1,105 @@
+section.hero {
+  max-width: 80rem;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  margin-inline: auto;
+
+  & h1 {
+    max-width: 43.5rem;
+  }
+
+  & h1 div {
+    display: inline-block; /*preciso que a div fique em linha e nao quebre linha e ao mesmo tempo preciso que seja block pra uso de width e height*/
+    overflow: hidden; /* a div tem limite de tamanho e o que passar disso ele vai esconder*/
+    height: 5rem;
+    width: min-content; /*qual o minimo que eu posso ter de largura que nao quebre as letras mas quebre palavras? O min-content olha a palavra maior*/
+    vertical-align: bottom;
+  }
+
+  /* as cores de cada span no h1*/
+  & h1 span:nth-child(1),
+  & h1 span:nth-child(4) {
+    color: var(--snitap-sky-mid);
+  }
+
+  & h1 span:nth-child(2) {
+    color: var(--snitap-joy-mid);
+  }
+
+  & h1 span:nth-child(3) {
+    color: var(--snitap-leaf-mid);
+  }
+
+  & h1 span {
+    display: block;
+    animation: slideUp 6s infinite ease;
+  }
+}
+
+@keyframes slideUp {
+  /*radical static*/
+  0%,
+  22% {
+    transform: translateY(0);
+  }
+
+  /*divertida in - entrada*/
+  23% {
+    transform: translateY(calc(-5rem - 15px));
+  }
+  25% {
+    transform: translateY(calc(-5rem + 10px));
+  }
+  27% {
+    transform: translateY(calc(-5rem - 5px));
+  }
+  29% {
+    transform: translateY(calc(-5rem + 5px));
+  }
+
+  /*divertida static*/
+  33%,
+  55% {
+    transform: translateY(-5rem);
+  }
+
+  /*saudavel in*/
+  56% {
+    transform: translateY(calc(-10rem - 15px));
+  }
+  58% {
+    transform: translateY(calc(-10rem + 10px));
+  }
+  60% {
+    transform: translateY(calc(-10rem - 5px));
+  }
+
+  62% {
+    transform: translateY(calc(-10rem + 5px));
+  }
+
+  /*saudavel static*/
+  66%,
+  88% {
+    transform: translateY(-10rem);
+  }
+
+  /*radical in*/
+  89% {
+    transform: translateY(calc(-15rem - 15px));
+  }
+  91% {
+    transform: translateY(calc(-15rem + 10px));
+  }
+  93% {
+    transform: translateY(calc(-15rem - 5px));
+  }
+
+  95% {
+    transform: translateY(calc(-15rem + 5px));
+  }
+
+  100% {
+    transform: translateY(-15rem);
+  }
+}
