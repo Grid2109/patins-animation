@@ -92,18 +92,9 @@ Em `styles/gallery.css`, a animação baseada em rolagem usa:
 Esses recursos podem **não funcionar em todos os navegadores**. O layout e o hover continuam funcionando normalmente; apenas a animação “on scroll” pode não acontecer dependendo do suporte do navegador.
 
 ## 📸 Capturas
+<img width="1920" height="1032" alt="Captura de tela 2026-01-19 114144" src="https://github.com/user-attachments/assets/87fedb07-548c-4ad0-8e2d-3dc4771c2a03" />
+<img width="1920" height="1032" alt="Captura de tela 2026-01-19 114210" src="https://github.com/user-attachments/assets/dd878a9c-ef67-4c52-bebc-83a754f1a8bd" />
 
-> Adicione suas imagens na pasta `assets/` e referencie-as aqui. Sugestão de nomes:
->
-> - `assets/preview-home.png` (hero + banner)
-> - `assets/preview-gallery.png` (galeria)
->
-> Exemplo de uso em Markdown (após adicionar os arquivos):
->
-> ```md
-> ![Preview hero](assets/preview-home.png)
-> ![Preview galeria](assets/preview-gallery.png)
-> ```
 
 ## 📌 Créditos
 
@@ -112,4 +103,5 @@ Esses recursos podem **não funcionar em todos os navegadores**. O layout e o ho
 ## 📄 Licença
 
 Este repositório não declara uma licença. Se você quiser abrir para uso/redistribuição, adicione um arquivo `LICENSE` (por exemplo, MIT).
+
 
